@@ -9,6 +9,24 @@ class Test_sorting(unittest.TestCase):
         self.ordered = [11, 12, 24, 25, 34, 64, 90]
         self.assertEquals(self.bubble.bubbleSort(self.array), self.ordered)
 
+    def test_bubble_2(self):
+        self.bubble = Sort()
+        self.array = [12, 11, 13, 5, 6]
+        self.ordered = [5, 6, 11, 12, 13]
+        self.assertEquals(self.bubble.bubbleSort(self.array), self.ordered)
+
+    def test_insert_1(self):
+        self.insert = Sort()
+        self.array = [12, 11, 13, 5, 6]
+        self.ordered = [5, 6, 11, 12, 13]
+        self.assertEqual(self.insert.insertSort(self.array), self.ordered)
+
+    def test_insert_2(self):
+        self.insert = Sort()
+        self.array = [64, 34, 25, 12, 24, 11, 90]
+        self.ordered = [11, 12, 24, 25, 34, 64, 90]
+        self.assertEqual(self.insert.insertSort(self.array), self.ordered)
+
 
 if __name__ == '__main__':
     unittest.main()
