@@ -1,0 +1,21 @@
+language: python
+
+python:
+
+  - "3.6"
+
+script:
+
+  - coverage run Test_sorting.py
+
+​
+
+install:
+
+  - pip install -r requirements.txt
+
+​
+
+after_success:
+
+  - coveralls
