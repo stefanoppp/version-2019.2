@@ -11,7 +11,6 @@ def inserctionsort (lista) :
             j -= 1
             comparaciones += 1
         lista [j] = val
-
 lista = [66, 71, 16, 21, 79, 9, 40, 60, 5]
 comparaciones = 0
 t0 = time()
