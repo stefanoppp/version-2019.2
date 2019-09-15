@@ -1,5 +1,5 @@
   class sorting:
-    def bubbleSort(self, lista):
+    def bubbleSorting(self, lista):
         n = len(lista)
         i = 0
         for i in range (1, n):
